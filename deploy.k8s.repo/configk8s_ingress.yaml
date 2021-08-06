@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: imageIngress
+spec:
+  defaultBackend:
+    service:
+      name: default-http-backend
+      port:
+        number: 80
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - host
+    secretName: tls-default-secret
+  rules:
+  - host: host
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: aliasService
+            port:
+              number: 80

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: serviceName
+  namespace: default
+  labels:
+    app: serviceName
+spec:
+  selector:
+    app: label
+  ports:
+    - name: web-dotnet
+      port: 80
+      targetPort: 8080
+  type: ClusterIP

@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alias-deployment
+  namespace: default
+  labels:
+    app: alias
+spec:
+  replicas: replicas
+  selector:
+    matchLabels:
+      app: alias
+  template:
+    metadata:
+      labels:
+        app: alias
+    spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - values
+              topologyKey: "kubernetes.io/hostname"
+      containers:
+      - name: alias
+        image: image
+        imagePullPolicy: Always
+        livenessProbe:
+          httpGet:
+            path: "/health"
+            port: 8080
+          initialDelaySeconds: 90
+          periodSeconds: 40
+          timeoutSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: "/health"
+            port: 8080
+          initialDelaySeconds: 60
+          periodSeconds: 80
+          timeoutSeconds: 10
+        resources:
+          requests:
+            cpu: 120m
+            memory: 160M
+          limits:
+            cpu: 160m
+            memory: 220M
+      tolerations:
+      - key: "node.kubernetes.io/not-ready"
+        operator: "Exists"
+        effect: "NoExecute"
+        tolerationSeconds: 30

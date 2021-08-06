@@ -1,0 +1,9 @@
+deploy:
+  config:
+    regisgry: docker.io/lukvini
+    image: webapi.test.dotnet.kubernetes
+    host: testwebapi.k8s.luk.com
+    alias: webapi-test-dotnet-kubernetes
+    replicas: 2
+  env:
+    ASPNETCORE_ENVIROMENT: dev
