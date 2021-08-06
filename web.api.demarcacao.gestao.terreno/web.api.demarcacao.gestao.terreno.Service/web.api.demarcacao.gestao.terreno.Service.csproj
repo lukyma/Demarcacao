@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Pattern" Version="0.2.9.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\web.api.demarcacao.gestao.terreno.Crosscutting\web.api.demarcacao.gestao.terreno.Crosscutting.csproj" />
+    <ProjectReference Include="..\web.api.demarcacao.gestao.terreno.Domain\web.api.demarcacao.gestao.terreno.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

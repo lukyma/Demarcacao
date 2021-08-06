@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>web.api.demarcacao.gestao.terreno.Endpoint</name>
+    </assembly>
+    <members>
+        <member name="T:web.api.demarcacao.gestao.terreno.Endpoint.Config.Swagger.Security.BearerJwtSecurityRequirement">
+            <summary>
+            JWT Bearer token requirement swagger.
+            </summary>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.terreno.Endpoint.Controllers.TerrenoController.PostAsync(web.api.demarcacao.gestao.terreno.Endpoint.Models.TerrenoVM,System.Threading.CancellationToken)">
+            <summary>
+            Cadastro inicial de um terreno.
+            </summary>
+            <param name="terreno"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.terreno.Endpoint.Controllers.TerrenoController.GetAsync(System.Int32,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Threading.CancellationToken)">
+            <summary>
+            Listagem de todos os terrenos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.terreno.Endpoint.Controllers.TerrenoController.GetTerrenosEmpreendimentoAsync(System.Threading.CancellationToken)">
+            <summary>
+            Listagem de terrenos de acordo com o empreendimento.
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.terreno.Endpoint.Controllers.TerrenoController.GetByIdAsync(System.Int64,System.Threading.CancellationToken)">
+            <summary>
+            Exibe os detalhes de um terreno específico. 
+            </summary>
+            <param name="id"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.terreno.Endpoint.Controllers.TerrenoController.PutAsync(System.Int64,web.api.demarcacao.gestao.terreno.Endpoint.Models.TerrenoVM,System.Threading.CancellationToken)">
+            <summary>
+            Atualiza as informações de um terreno.
+            </summary>
+            <param name="id">identificador do terreno</param>
+            <param name="terreno">recurso terreno</param>
+            <returns></returns>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.terreno.Endpoint.Controllers.TerrenoController.DeleteAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Excluí um terreno.
+            </summary>
+            <param name="id">identificador do terreno</param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:web.api.demarcacao.gestao.terreno.Endpoint.Startup">
+            <summary>
+            Classe startup
+            </summary>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.terreno.Endpoint.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:web.api.demarcacao.gestao.terreno.Endpoint.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.terreno.Endpoint.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">ServiceCollection for register dependency injection</param>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.terreno.Endpoint.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="provider"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  demarcacao-gestao-terreno-web:
+    build:
+      context: ../..
+      dockerfile: web.api.demarcacao.gestao.empreendimento.Endpoint/Dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - local_env.yaml
+    container_name: demarcacao.gestao.empreendimento.web

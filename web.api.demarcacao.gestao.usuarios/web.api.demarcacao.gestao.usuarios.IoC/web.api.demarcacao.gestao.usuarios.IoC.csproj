@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\web.api.demarcacao.gestao.usuarios.CrossCutting\web.api.demarcacao.gestao.usuarios.CrossCutting.csproj" />
+    <ProjectReference Include="..\web.api.demarcacao.gestao.usuarios.Data\web.api.demarcacao.gestao.usuarios.Data.csproj" />
+    <ProjectReference Include="..\web.api.demarcacao.gestao.usuarios.Domain\web.api.demarcacao.gestao.usuarios.Domain.csproj" />
+    <ProjectReference Include="..\web.api.demarcacao.gestao.usuarios.Service\web.api.demarcacao.gestao.usuarios.Service.csproj" />
+  </ItemGroup>
+
+</Project>

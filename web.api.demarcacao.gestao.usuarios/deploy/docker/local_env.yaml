@@ -1,0 +1,8 @@
+ASPNETCORE_ENVIRONMENT=Development
+hostDd=ec2-54-160-96-70.compute-1.amazonaws.com
+portDb=5432
+userNameDb=rbmxgkyvxchcwd
+passwordDb=7d80771f79658c19df93bf6831e7a427aa877d72219734b76b412fb994a6ace9
+databaseNameDb=dfgrojc05g532v
+ConnectionString=Server=192.168.18.40;Port=30432;User Id=admin;Password=admin123;Database=DEMARCACAO_GESTAO_USUARIO_LOCAL
+secretJwt=b9c2a307b23a41a7bb294aa7beba8f2c

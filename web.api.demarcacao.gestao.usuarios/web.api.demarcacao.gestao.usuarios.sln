@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.0 - Endpoint", "1.0 - Endpoint", "{81945ADF-3F06-4981-8C58-3CB80D2D1588}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0 - Service", "2.0 - Service", "{9AC9D590-A82B-4A52-B3EB-57B02224620B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.0 - Domain", "3.0 - Domain", "{602BAA63-83CC-49C9-B54C-468B0706E8BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.0 - Infra", "4.0 - Infra", "{71ACE0AC-7B8F-4C79-BF86-C97996C6E1BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Crosscutting", "4.1 - Crosscutting", "{C21B45A9-6575-40D9-8EFA-F50114738762}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.0 - Testing", "5.0 - Testing", "{92DD7945-7297-40CC-9EAF-2DC8825AA860}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.usuarios.Data", "web.api.demarcacao.gestao.usuarios.Data\web.api.demarcacao.gestao.usuarios.Data.csproj", "{74B7D69C-1797-4478-978F-5703DB0B1940}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.usuarios.Domain", "web.api.demarcacao.gestao.usuarios.Domain\web.api.demarcacao.gestao.usuarios.Domain.csproj", "{FA700BB1-C41C-470C-9E0F-B54EB6796997}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.usuarios.CrossCutting", "web.api.demarcacao.gestao.usuarios.CrossCutting\web.api.demarcacao.gestao.usuarios.CrossCutting.csproj", "{3C1918E5-89B7-460A-ACFA-5AA1A8382312}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.usuarios.Service", "web.api.demarcacao.gestao.usuarios.Service\web.api.demarcacao.gestao.usuarios.Service.csproj", "{3F8A2FDB-EEDC-43A4-810D-D505D3AC9FE1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.usuarios.Endpoint", "web.api.demarcacao.gestao.usuarios.Endpoint\web.api.demarcacao.gestao.usuarios.Endpoint.csproj", "{34199524-888B-49E5-BFE2-ACEFDEEC6E3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.usuarios.IoC", "web.api.demarcacao.gestao.usuarios.IoC\web.api.demarcacao.gestao.usuarios.IoC.csproj", "{79FC59A7-A768-400F-8D62-43708609FAA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{B912B0CF-F9F3-4E3B-9B07-7DB7CEFDC91A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{49CB2A04-1A45-45C4-916C-8478C39E9660}"
+	ProjectSection(SolutionItems) = preProject
+		deploy\k8s\deploy_development.yaml = deploy\k8s\deploy_development.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{86735F59-4085-44A0-B9C4-750F25308D0D}"
+	ProjectSection(SolutionItems) = preProject
+		deploy\docker\docker-compose.yaml = deploy\docker\docker-compose.yaml
+		web.api.demarcacao.gestao.usuarios.Endpoint\Dockerfile = web.api.demarcacao.gestao.usuarios.Endpoint\Dockerfile
+		deploy\docker\local_env.yaml = deploy\docker\local_env.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74B7D69C-1797-4478-978F-5703DB0B1940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74B7D69C-1797-4478-978F-5703DB0B1940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74B7D69C-1797-4478-978F-5703DB0B1940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74B7D69C-1797-4478-978F-5703DB0B1940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA700BB1-C41C-470C-9E0F-B54EB6796997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA700BB1-C41C-470C-9E0F-B54EB6796997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA700BB1-C41C-470C-9E0F-B54EB6796997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA700BB1-C41C-470C-9E0F-B54EB6796997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C1918E5-89B7-460A-ACFA-5AA1A8382312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1918E5-89B7-460A-ACFA-5AA1A8382312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1918E5-89B7-460A-ACFA-5AA1A8382312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1918E5-89B7-460A-ACFA-5AA1A8382312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8A2FDB-EEDC-43A4-810D-D505D3AC9FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8A2FDB-EEDC-43A4-810D-D505D3AC9FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8A2FDB-EEDC-43A4-810D-D505D3AC9FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8A2FDB-EEDC-43A4-810D-D505D3AC9FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34199524-888B-49E5-BFE2-ACEFDEEC6E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34199524-888B-49E5-BFE2-ACEFDEEC6E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34199524-888B-49E5-BFE2-ACEFDEEC6E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34199524-888B-49E5-BFE2-ACEFDEEC6E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79FC59A7-A768-400F-8D62-43708609FAA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79FC59A7-A768-400F-8D62-43708609FAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79FC59A7-A768-400F-8D62-43708609FAA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79FC59A7-A768-400F-8D62-43708609FAA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74B7D69C-1797-4478-978F-5703DB0B1940} = {71ACE0AC-7B8F-4C79-BF86-C97996C6E1BB}
+		{FA700BB1-C41C-470C-9E0F-B54EB6796997} = {602BAA63-83CC-49C9-B54C-468B0706E8BF}
+		{3C1918E5-89B7-460A-ACFA-5AA1A8382312} = {C21B45A9-6575-40D9-8EFA-F50114738762}
+		{3F8A2FDB-EEDC-43A4-810D-D505D3AC9FE1} = {9AC9D590-A82B-4A52-B3EB-57B02224620B}
+		{34199524-888B-49E5-BFE2-ACEFDEEC6E3D} = {81945ADF-3F06-4981-8C58-3CB80D2D1588}
+		{79FC59A7-A768-400F-8D62-43708609FAA0} = {71ACE0AC-7B8F-4C79-BF86-C97996C6E1BB}
+		{49CB2A04-1A45-45C4-916C-8478C39E9660} = {B912B0CF-F9F3-4E3B-9B07-7DB7CEFDC91A}
+		{86735F59-4085-44A0-B9C4-750F25308D0D} = {B912B0CF-F9F3-4E3B-9B07-7DB7CEFDC91A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDF12387-B271-49A0-A219-0ABF34FCE9FD}
+	EndGlobalSection
+EndGlobal

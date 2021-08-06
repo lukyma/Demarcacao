@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>web.api.demarcacao.gestao.usuarios.Endpoint</name>
+    </assembly>
+    <members>
+        <member name="T:web.api.demarcacao.gestao.usuarios.Endpoint.Config.Swagger.Security.BearerJwtSecurityRequirement">
+            <summary>
+            JWT Bearer token requirement swagger.
+            </summary>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.usuarios.Endpoint.Controllers.AuthController.PostAsync(web.api.demarcacao.gestao.usuarios.Endpoint.Models.AuthTokenVM,System.Threading.CancellationToken)">
+            <summary>
+            Retorna um accessToken para autenticar e autorizar o usuário em vários endpoints, conforme interface.
+            </summary>
+            <param name="tokenVM">Body get token</param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:web.api.demarcacao.gestao.usuarios.Endpoint.Startup">
+            <summary>
+            Classe startup
+            </summary>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.usuarios.Endpoint.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:web.api.demarcacao.gestao.usuarios.Endpoint.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.usuarios.Endpoint.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">ServiceCollection for register dependency injection</param>
+        </member>
+        <member name="M:web.api.demarcacao.gestao.usuarios.Endpoint.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="provider"></param>
+        </member>
+    </members>
+</doc>

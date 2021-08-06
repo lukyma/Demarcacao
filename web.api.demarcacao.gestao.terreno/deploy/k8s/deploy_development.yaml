@@ -1,0 +1,15 @@
+deploy:
+  config:
+    regisgry: docker.io/lukvini
+    image: web.api.demarcacao.gestao.terreno
+    host: dev.web.api.demarcacao.gestao.terreno.k8s.luk.com
+    alias: dev-api-demarcacao-gestao-terreno-k8s
+    replicas: 2
+    health:
+      urn_live: /health/live
+      urn_ready: /health/ready
+  env:
+    ASPNETCORE_ENVIROMENT: dev
+    ConnectionString: Server=#{hostDb}#;Port=#{portDb}#;User Id=#{userNameDb}#;Password=#{passwordDb}#;Database=#{databaseNameDb}#
+    secretJwt: #{secretJwt}#
+    RedisConnection: #{RedisConnection}#

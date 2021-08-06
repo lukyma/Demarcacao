@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.0 - Endpoint", "1.0 - Endpoint", "{81945ADF-3F06-4981-8C58-3CB80D2D1588}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0 - Service", "2.0 - Service", "{9AC9D590-A82B-4A52-B3EB-57B02224620B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.0 - Domain", "3.0 - Domain", "{602BAA63-83CC-49C9-B54C-468B0706E8BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.0 - Infra", "4.0 - Infra", "{71ACE0AC-7B8F-4C79-BF86-C97996C6E1BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Crosscutting", "4.1 - Crosscutting", "{C21B45A9-6575-40D9-8EFA-F50114738762}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.0 - Testing", "5.0 - Testing", "{92DD7945-7297-40CC-9EAF-2DC8825AA860}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{B912B0CF-F9F3-4E3B-9B07-7DB7CEFDC91A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.empreendimento.Domain", "web.api.demarcacao.gestao.empreendimento.Domain\web.api.demarcacao.gestao.empreendimento.Domain.csproj", "{564FB92B-63B5-4F21-8F37-04334ED2C1C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.empreendimento.Data", "web.api.demarcacao.gestao.empreendimento.Data\web.api.demarcacao.gestao.empreendimento.Data.csproj", "{EEEF0E22-74AB-43B6-B9D4-CD40DFCB36A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.empreendimento.Cross", "web.api.demarcacao.gestao.empreendimento.Cross\web.api.demarcacao.gestao.empreendimento.Cross.csproj", "{FC74ECFF-9DDB-40AA-B3DF-4E40D226FA4E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.empreendimento.Service", "web.api.demarcacao.gestao.empreendimento.Service\web.api.demarcacao.gestao.empreendimento.Service.csproj", "{50AA647D-1568-4C24-B4DF-A33F558F3265}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.empreendimento.Endpoint", "web.api.demarcacao.gestao.empreendimento.Endpoint\web.api.demarcacao.gestao.empreendimento.Endpoint.csproj", "{FA63176B-66F1-42ED-A63E-6941CCD0B247}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.api.demarcacao.gestao.empreendimento.IoC", "web.api.demarcacao.gestao.empreendimento.IoC\web.api.demarcacao.gestao.empreendimento.IoC.csproj", "{57C53DE3-4001-4820-9E30-1DBB6E4C4D1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{3A36D39B-DBBD-4DF2-8ED3-16AB790A6156}"
+	ProjectSection(SolutionItems) = preProject
+		deploy\docker\docker-compose.yaml = deploy\docker\docker-compose.yaml
+		web.api.demarcacao.gestao.empreendimento.Endpoint\Dockerfile = web.api.demarcacao.gestao.empreendimento.Endpoint\Dockerfile
+		deploy\docker\local_env.yaml = deploy\docker\local_env.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{39091259-EAE8-4AE5-80E3-C5C0C770319C}"
+	ProjectSection(SolutionItems) = preProject
+		deploy\k8s\deploy_development.yaml = deploy\k8s\deploy_development.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{564FB92B-63B5-4F21-8F37-04334ED2C1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564FB92B-63B5-4F21-8F37-04334ED2C1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564FB92B-63B5-4F21-8F37-04334ED2C1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564FB92B-63B5-4F21-8F37-04334ED2C1C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEEF0E22-74AB-43B6-B9D4-CD40DFCB36A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEEF0E22-74AB-43B6-B9D4-CD40DFCB36A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEEF0E22-74AB-43B6-B9D4-CD40DFCB36A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEEF0E22-74AB-43B6-B9D4-CD40DFCB36A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC74ECFF-9DDB-40AA-B3DF-4E40D226FA4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC74ECFF-9DDB-40AA-B3DF-4E40D226FA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC74ECFF-9DDB-40AA-B3DF-4E40D226FA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC74ECFF-9DDB-40AA-B3DF-4E40D226FA4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50AA647D-1568-4C24-B4DF-A33F558F3265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50AA647D-1568-4C24-B4DF-A33F558F3265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50AA647D-1568-4C24-B4DF-A33F558F3265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50AA647D-1568-4C24-B4DF-A33F558F3265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA63176B-66F1-42ED-A63E-6941CCD0B247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA63176B-66F1-42ED-A63E-6941CCD0B247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA63176B-66F1-42ED-A63E-6941CCD0B247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA63176B-66F1-42ED-A63E-6941CCD0B247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C53DE3-4001-4820-9E30-1DBB6E4C4D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C53DE3-4001-4820-9E30-1DBB6E4C4D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C53DE3-4001-4820-9E30-1DBB6E4C4D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C53DE3-4001-4820-9E30-1DBB6E4C4D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{564FB92B-63B5-4F21-8F37-04334ED2C1C0} = {602BAA63-83CC-49C9-B54C-468B0706E8BF}
+		{EEEF0E22-74AB-43B6-B9D4-CD40DFCB36A7} = {71ACE0AC-7B8F-4C79-BF86-C97996C6E1BB}
+		{FC74ECFF-9DDB-40AA-B3DF-4E40D226FA4E} = {C21B45A9-6575-40D9-8EFA-F50114738762}
+		{50AA647D-1568-4C24-B4DF-A33F558F3265} = {9AC9D590-A82B-4A52-B3EB-57B02224620B}
+		{FA63176B-66F1-42ED-A63E-6941CCD0B247} = {81945ADF-3F06-4981-8C58-3CB80D2D1588}
+		{57C53DE3-4001-4820-9E30-1DBB6E4C4D1B} = {71ACE0AC-7B8F-4C79-BF86-C97996C6E1BB}
+		{3A36D39B-DBBD-4DF2-8ED3-16AB790A6156} = {B912B0CF-F9F3-4E3B-9B07-7DB7CEFDC91A}
+		{39091259-EAE8-4AE5-80E3-C5C0C770319C} = {B912B0CF-F9F3-4E3B-9B07-7DB7CEFDC91A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D499A893-86DF-40F9-B675-62AE6A96C3B7}
+	EndGlobalSection
+EndGlobal
